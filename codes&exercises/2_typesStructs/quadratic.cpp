@@ -8,11 +8,20 @@ using std::sqrt; using std::endl;
 
 //want: a function named quadratic that will take in 3 doubles and return
 //a combination of: does a solution exist, and if so, what is it?
+double quadratic(double a,double b,double c)
 {
 	//get radical, test if negative, return indicating no roots
-	
+	double delta=b*b-4*a*c;
+	if (delta<0)
+		cout<<"no root exits"<<endl;
+	else{
+		double root1,root2;
+		root1=(sqrt(delta)-b)/(2*a);
+		root2=-(sqrt(delta)+b)/(2*a);
+		cout<<"root1="<<root1<<" "<<"root2="<<root2<<endl;
+	}
 	//otherwise get roots and return
-	
+	return 0;
 }
 
 int main(){
@@ -24,7 +33,7 @@ int main(){
 	//we will learn more about cin on Thursday
 	cin >> a >> b >> c;
 	//some call to quadratic function!
-
+	quadratic(a,b,c);
 	//get roots if they exist
 
 	//print accordingly

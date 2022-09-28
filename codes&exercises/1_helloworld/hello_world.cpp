@@ -3,7 +3,9 @@
 
 #include <iostream>
 
-void hello_cpp() {
+int hello_cpp() {
+    std::cout<<"Hello World"<<std::endl;
+    return 0;
 }
 
 // =========================  C Way  ==============================
