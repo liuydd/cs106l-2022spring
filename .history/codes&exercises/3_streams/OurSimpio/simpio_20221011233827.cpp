@@ -70,21 +70,7 @@ int StringToInteger(const string& str) {
 
 int getInteger() {
         /* First we get a line of input from the user. */
-    while(true){
-        string line;
-        std::getline(cin,line);
-        std::istringstream getting(line);
-        int data;
-        if(getting>>data){
-            char data2;
-            if(getting>>data2)
-                cout<<"unsuccesful input"<<endl;
-            else
-                return data2;
-        }
-        else
-            cout<<"invalid input."<<endl;
-    }
+    
         /*
          * We'll  use an istringstream because we only want to pull data
          * out of the stream once we have put the string's contents in it.

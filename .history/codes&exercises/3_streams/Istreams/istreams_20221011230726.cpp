@@ -46,14 +46,7 @@ void readHaikuWord() {
 
 void readHaikuLine() {
     // Create our ifstream and make it open the file
-    std::ifstream input("res/haiku.txt");
-    std::string value;
-    while(true){
-        std::getline(cin,value);
-        if(input.fail())
-            break;
-        cout<<value<<endl;
-    }
+
     // Something to store the lines as we get them form the stream
 
         // If input is in a fail state, either a value couldn't

@@ -9,51 +9,39 @@ using std::string; using std::cin;
 //read numbers from a file
 void readNumbers() {
     // Create our ifstream and make it open the file
-    std::ifstream input("res/numbers.txt");
+    
 
     // Something to store values we get from the stream
-    int value;
+
         // Extract next number from input
-    while(true){    
-        input>>value;
+        
+
         // If input is in a fail state, either a value couldn't
         // be converted, or we are at the end of the file.
-        if(input.fail())
-            break;
-        cout<<value<<endl;
+
         //print whatever we read
-    }        
+        
 }
 
 //read a single word at a time from a file
 void readHaikuWord() {
     // Create our ifstream and make it open the file
-    std::ifstream input("res/haiku.txt");
+
      // Something to store values we get from the stream
-    std::string value;
-    while(true){
+
         // Extract next word from input
-        input>>value;
-        if(input.fail())
-            break;
-        cout<<value<<endl;
+
+
         // If input is in a fail state, either a value couldn't
         // be converted, or we are at the end of the file.
 
         //print whatever we read
-    }
+
 }
 
 void readHaikuLine() {
     // Create our ifstream and make it open the file
-    std::ifstream input("res/haiku.txt");
-    std::string value;
-    while(true){
-        std::getline(cin,value);
-        if(input.fail())
-            break;
-        cout<<value<<endl;
-    }
+
     // Something to store the lines as we get them form the stream
 
         // If input is in a fail state, either a value couldn't

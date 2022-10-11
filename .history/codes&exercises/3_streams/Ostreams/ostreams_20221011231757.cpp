@@ -10,8 +10,9 @@ using std::endl;
 using std::string;
 
 //function to write num to any ostream
-void NumToOstream(std::ostream &output,int num){
-    output<<num<<endl;
+void NumToOstream(int num){
+    std::ofstream output("out.txt");
+    
 }
 
 int main() {
@@ -23,11 +24,10 @@ int main() {
     std::ofstream out_stream("out.txt");
 
     out_stream << "The answer is: " << myNum << endl;
+    
 
     // Write method to take any ostream
-    std::ofstream fileout("out.txt");
-    NumToOstream(cout,myNum);
-    NumToOstream(fileout,myNum);
+    
    
     return 0;
 }
